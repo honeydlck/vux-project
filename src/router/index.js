@@ -46,9 +46,9 @@ const router = new Router({
 });
 
 export function resetRouter() {
-  // 清空需要权限查看的路由
-//     const newRouter = createRouter()
-//     router.matcher = newRouter.matcher // reset router
+//  清空需要权限查看的路由
+    // const newRouter = createRouter()
+    // router.matcher = newRouter.matcher // reset router
 }
 
 export default router;

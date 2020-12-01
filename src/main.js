@@ -6,9 +6,17 @@ import router from './router'
 import VueRouter from 'vue-router'
 import {post,fetch,patch,put} from '@/utils/http'
 import {ToastPlugin} from 'vux'
+import 'element-ui/lib/theme-chalk/index.css'
+import element from './element/index'
+import vConsole from 'vconsole'
+import axios from 'axios'
+Vue.prototype.$vConsole= new vConsole()
+Vue.prototype.$axios=axios;
+Vue.use(element)
 
 import store from './store'
-import  '@/permission'
+// import  '@/permission'
+
 
 const FastClick = require('fastclick')
 FastClick.attach(document.body)

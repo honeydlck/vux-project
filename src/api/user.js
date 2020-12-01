@@ -14,13 +14,16 @@ import Vue from 'vue'
 //  }
 
 export function login (data) {
-  return Vue.http.get('index.php', { params: { m: 'user', c: 'login'} })
+
+  debugger
+  console.log(Vue)
+  return Vue.http.fetch('index.php', { params: { m: 'user', c: 'login'} })
 }
 
 export function getInfo () {
-  return Vue.http.get('index.php', {params: { m: 'exam', c: 'memberinfo'} })
+  return Vue.http.fetch('index.php', {params: { m: 'exam', c: 'memberinfo'} })
 }
 
 export function logout () {
-  return Vue.http.get('index.php', {params: { m: 'exam', c: 'memberinfo'} })
+  return Vue.http.fetch('index.php', {params: { m: 'exam', c: 'memberinfo'} })
 }

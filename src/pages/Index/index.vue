@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <img src="../../assets/images/index_active.png">
-
-    <div>{{str}}</div>
+    <Xinshidai/>
   </div>
 </template>
 
 <script>
+import Xinshidai from '@/components/Xinshidai'
 export default {
+  components:{Xinshidai},
   data () {
     return {
       msg: 'Hello World!',

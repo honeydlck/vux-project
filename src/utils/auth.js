@@ -13,7 +13,7 @@ import { cookie } from 'vux'
 //     return cookie.get('ecmsmlauth') && cookie.get('ecmsmlgroupid') && cookie.get('ecmsmlrnd') && cookie.get('ecmsmluserid') && cookie.get('ecmsmlusername')
 // }
 
-const TokenKey = 'tiku_token'
+const TokenKey = 'O'
 
 export function getToken() {
   return cookie.get(TokenKey)

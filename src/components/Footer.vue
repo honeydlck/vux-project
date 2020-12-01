@@ -8,17 +8,17 @@
     <TabbarItem :selected="$route.name === 'log'" link="/log">
       <img slot="icon" src="../assets/images/cate.png"/>
       <img slot="icon-active" src="../assets/images/cate_active.png"/>
-      <span slot="label">缺勤打卡</span>
+      <span slot="label">订单</span>
     </TabbarItem>
     <TabbarItem :selected="$route.name === 'work'" link="/work">
       <img slot="icon" src="../assets/images/cate.png"/>
       <img slot="icon-active" src="../assets/images/cate_active.png"/>
-      <span slot="label">工作</span>
+      <span slot="label">红包</span>
     </TabbarItem>
     <TabbarItem :selected="$route.name === 'my'" link="/my">
       <img slot="icon" src="../assets/images/my.png"/>
       <img slot="icon-active" src="../assets/images/my_active.png"/>
-      <span slot="label">我的</span>
+      <span slot="label">帮助</span>
     </TabbarItem>
   </tabbar>
 </template>
