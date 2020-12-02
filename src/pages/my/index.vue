@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    {{msg}}
+    {{ msg }}
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 export default {
   data () {
     return {
-      
-      msg: '我的页面!'
+
+      msg: '客服微信：ooooops0301'
     }
   },
 
@@ -19,5 +19,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

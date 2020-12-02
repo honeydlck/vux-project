@@ -44,7 +44,7 @@ export default {
   },
   mounted () {
     setToken('test');
-    return;
+    return
     var WXInfo = localStorage.getItem('WXInfo') ? JSON.parse(localStorage.getItem('WXInfo')) : 'noLogin'
     let str = window.location.href
     var ua = navigator.userAgent.toLowerCase()
@@ -66,8 +66,13 @@ export default {
       console.log("wxcode:", JSON.stringify(code))
 
       this.$axios.post('/api/index.php?cmd=getOpenid', { code: code }).then(res => {
-        console.log("res",res.data)
+        console.log("res", res.data)
         // setToken(res.data.data)
+        if (res.data.data === null) {
+          this.getLogin()
+          return
+        }
+        setToken(res.data.data);
       })
     }
 
